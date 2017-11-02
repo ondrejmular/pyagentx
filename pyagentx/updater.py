@@ -43,7 +43,7 @@ class Updater(threading.Thread):
                     logger.error('Queue full')
                 except:
                     logger.exception('Unhandled update exception')
-            time.sleep(0.1)
+            time.sleep(2)
         logger.info('Updater stopping')
 
     # Override this
